@@ -11,7 +11,7 @@ author: MapMindAI
 
 # --- List of links in the navigation bar --- #
 navbar-links:
-  Sectors: "/#sectors"
+  Showcase: "/#showcase"
   Projects: "/#projects"
   About: "aboutme"
   GitHub: "https://github.com/MapMindAI"

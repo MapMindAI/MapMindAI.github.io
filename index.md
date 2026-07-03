@@ -15,7 +15,7 @@ css:
     <h1 class="mm-hero__title">AI-Powered SLAM<br>for Autonomous Robots</h1>
     <p class="mm-hero__subtitle">We build open-source mapping, localization, and perception tools — from LiDAR SLAM to visual odometry on the edge — so robots can understand the world around them.</p>
     <div class="mm-hero__ctas">
-      <a href="#sectors" class="mm-btn mm-btn--primary">Explore Sectors</a>
+      <a href="#showcase" class="mm-btn mm-btn--primary">See It In Action</a>
       <a href="https://github.com/MapMindAI" class="mm-btn mm-btn--ghost" target="_blank" rel="noopener">View on GitHub ↗</a>
     </div>
     <p class="mm-hero__note">11 open-source repositories · Hong Kong</p>
@@ -49,10 +49,10 @@ css:
   </div>
 </section>
 
-<section id="sectors" class="mm-section">
+<section id="showcase" class="mm-section">
   <div class="mm-section__head">
-    <p class="mm-eyebrow">What we build</p>
-    <h2 class="mm-section__title">What we build</h2>
+    <p class="mm-eyebrow">What We Build</p>
+    <h2 class="mm-section__title">In Action</h2>
   </div>
 
   <div class="mm-sector">
@@ -94,10 +94,31 @@ css:
   </div>
 
   <div class="mm-sector mm-sector--reverse">
-    <div class="mm-sector__media">
+    <div class="mm-sector__media mm-sector__media--stack">
       <video class="mm-sector__video mm-sector__video--single" controls preload="none" poster="{{ '/assets/videos/posters/esp32_robot_test.jpg' | relative_url }}">
         <source src="{{ '/assets/videos/esp32_robot_test.mp4' | relative_url }}" type="video/mp4">
       </video>
+      <div class="mm-spec-panel">
+        <p class="mm-spec-panel__label">Hardware / Software Spec</p>
+        <div class="mm-spec-panel__grid">
+          <div class="mm-spec-panel__item">
+            <span class="mm-spec-panel__key">MCU</span>
+            <span class="mm-spec-panel__value">ESP32-WROOM-32</span>
+          </div>
+          <div class="mm-spec-panel__item">
+            <span class="mm-spec-panel__key">Video</span>
+            <span class="mm-spec-panel__value">WebRTC · H.264</span>
+          </div>
+          <div class="mm-spec-panel__item">
+            <span class="mm-spec-panel__key">Control</span>
+            <span class="mm-spec-panel__value">MQTT + CAN bus</span>
+          </div>
+          <div class="mm-spec-panel__item">
+            <span class="mm-spec-panel__key">Link</span>
+            <span class="mm-spec-panel__value">Wi-Fi, low-latency</span>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="mm-sector__copy">
       <p class="mm-eyebrow">Sector 02</p>
@@ -113,7 +134,7 @@ css:
   <div class="mm-sector">
     <div class="mm-sector__media mm-sector__media--stack">
       <figure class="mm-sector__figure">
-        <video class="mm-sector__video mm-sector__video--single" controls preload="none" poster="{{ '/assets/videos/posters/da3_rk3588.jpg' | relative_url }}">
+        <video class="mm-sector__video mm-sector__video--da3" controls preload="none" poster="{{ '/assets/videos/posters/da3_rk3588.jpg' | relative_url }}">
           <source src="{{ '/assets/videos/da3_rk3588.mp4' | relative_url }}" type="video/mp4">
         </video>
         <figcaption class="mm-sector__caption">DA3 split stream — RGB, depth, and 3D trajectory</figcaption>
