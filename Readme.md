@@ -20,6 +20,7 @@ bundle exec jekyll serve
 
 # test locally (windows) :
 
+
 * download & install ruby+devkit https://rubyinstaller.org/downloads/
 * install jekyll:
 ```
