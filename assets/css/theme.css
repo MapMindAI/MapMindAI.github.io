@@ -112,6 +112,16 @@ pre {
   box-shadow: 0 0 8px var(--mm-accent);
 }
 
+.navbar-custom .navbar-brand-logo {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 0.65rem;
+}
+.navbar-custom .navbar-brand-logo img {
+  height: 2rem !important;
+  width: auto;
+}
+
 .navbar-custom .navbar-nav .nav-link {
   font-family: var(--mm-font-mono);
   font-size: 0.85rem;

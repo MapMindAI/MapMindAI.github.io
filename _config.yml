@@ -11,13 +11,18 @@ author: MapMindAI
 
 # --- List of links in the navigation bar --- #
 navbar-links:
-  About: "aboutme"
+  Showcase: "/#showcase"
   Projects: "/#projects"
+  About: "aboutme"
   GitHub: "https://github.com/MapMindAI"
 
 # --- Logo --- #
 
-# No avatar image yet - the navbar uses a styled text wordmark instead (see theme.css)
+# Navbar logo mark (icon cropped from assets/MapMindAI.png, shown next to the text wordmark)
+title-img: "/assets/img/logo-mark.png"
+
+# Full logo (icon + wordmark), used as the fallback social share image
+avatar: "/assets/MapMindAI.png"
 
 # Add a search button to the navbar
 post_search: false
@@ -181,7 +186,9 @@ defaults:
       path: "" # all files
     values:
       layout: "page"
-      show-avatar: true
+      # avatar is used for the nav logo (title-img) and social share image already;
+      # show-avatar off avoids a duplicate circular avatar bubble in the navbar
+      show-avatar: false
 
 # Exclude these files from production site
 exclude:
