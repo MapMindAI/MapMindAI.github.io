@@ -1,5 +1,9 @@
 /* UniScanner product page - extends index.css component patterns */
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* --- Hero --- */
 
 .us-hero {
@@ -194,6 +198,14 @@
   color: var(--mm-text-secondary);
   font-family: var(--mm-font-mono);
 }
+.us-pricing-card__items--plain li {
+  justify-content: flex-start;
+}
+.us-pricing-card__items--plain li::before {
+  content: "+";
+  color: var(--mm-accent);
+  margin-right: 0.6rem;
+}
 .us-pricing-card__note {
   margin: 0;
   color: var(--mm-text-muted);
@@ -256,7 +268,66 @@
 /* --- Results grid (reuses mm-sector media classes) --- */
 
 .us-results-grid {
-  max-width: 1180px;
+  max-width: 900px;
   margin: 0 auto;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 650px) {
+  .us-results-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Survey CTA + floating button --- */
+
+.us-survey-ctas {
+  margin-top: 0.5rem;
+}
+
+.us-survey-fab {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.8rem 1.3rem;
+  background: var(--mm-accent);
+  color: #04140f;
+  border-radius: 999px;
+  font-family: var(--mm-font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  box-shadow: 0 12px 30px -10px #000000b3, 0 0 0 1px #04140f1a;
+  transition: transform 0.15s, box-shadow 0.15s, background-color 0.15s;
+}
+.us-survey-fab:hover {
+  background: var(--mm-accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px -10px #000000cc, 0 0 0 1px #04140f1a;
+}
+.us-survey-fab__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #04140f;
+  flex: none;
+  animation: us-fab-pulse 1.8s ease-in-out infinite;
+}
+@keyframes us-fab-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.7); }
+}
+
+@media (max-width: 650px) {
+  .us-survey-fab {
+    right: 14px;
+    bottom: 14px;
+    padding: 0.7rem 1.05rem;
+    font-size: 0.72rem;
+  }
 }
