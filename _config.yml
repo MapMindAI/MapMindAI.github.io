@@ -11,6 +11,7 @@ author: MapMindAI
 
 # --- List of links in the navigation bar --- #
 navbar-links:
+  UniScanner: "uniscanner"
   Showcase: "/#showcase"
   Projects: "/#projects"
   About: "aboutme"
@@ -198,6 +199,7 @@ exclude:
   - LICENSE
   - python
   - data
+  - UniScanner
 
 plugins:
   - jekyll-paginate

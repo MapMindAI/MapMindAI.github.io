@@ -1,0 +1,338 @@
+/* UniScanner product page - extends index.css component patterns */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* --- Hero --- */
+
+.us-hero {
+  position: relative;
+  overflow: hidden;
+  background: #000;
+  padding: clamp(72px, 10vw, 120px) 24px clamp(56px, 8vw, 90px);
+}
+.us-hero__glow {
+  position: absolute;
+  top: -20vw;
+  right: -15vw;
+  width: 50vw;
+  height: 50vw;
+  border-radius: 50%;
+  filter: blur(100px);
+  background: radial-gradient(circle, #2fe6c933, transparent 70%);
+  pointer-events: none;
+}
+.us-hero__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+}
+.us-hero__title {
+  margin: 0 0 0.5rem;
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--mm-text);
+}
+.us-hero__subtitle {
+  margin: 0 0 1.25rem;
+  font-size: clamp(1.05rem, 1.6vw, 1.3rem);
+  color: var(--mm-text-secondary);
+  font-weight: 600;
+}
+.us-hero__desc {
+  margin: 0 0 2rem;
+  max-width: 520px;
+  color: var(--mm-text-muted);
+  line-height: 1.65;
+}
+.us-hero__price {
+  margin: 1.5rem 0 0;
+  font-family: var(--mm-font-mono);
+  font-size: 0.85rem;
+  color: var(--mm-text-faint);
+}
+.us-hero__price a {
+  color: var(--mm-text-secondary);
+}
+.us-hero__price a:hover {
+  color: var(--mm-accent);
+}
+.us-hero__price-value {
+  color: var(--mm-accent);
+  font-weight: 700;
+  font-size: 1rem;
+}
+.us-hero__media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1448 / 1086;
+  object-fit: cover;
+  border-radius: var(--mm-radius);
+  border: 1px solid var(--mm-border);
+}
+
+@media (max-width: 900px) {
+  .us-hero__inner {
+    grid-template-columns: 1fr;
+  }
+  .us-hero__media {
+    order: -1;
+  }
+}
+
+/* --- Anatomy / blueprint images --- */
+
+.us-anatomy,
+.us-blueprint {
+  max-width: 1180px;
+  margin: 0 auto 2.5rem;
+  background: var(--mm-surface);
+  border: 1px solid var(--mm-border);
+  border-radius: var(--mm-radius);
+  padding: clamp(10px, 2vw, 28px);
+  box-shadow: 0 20px 50px -30px #000000d9;
+}
+.us-anatomy img,
+.us-blueprint img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1448 / 1086;
+  border-radius: var(--mm-radius-sm);
+}
+
+.us-parts-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1180px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem 1.5rem;
+}
+.us-parts-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+.us-parts-list__num {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  border: 1px solid var(--mm-border-strong);
+  font-family: var(--mm-font-mono);
+  font-size: 0.75rem;
+  color: var(--mm-accent);
+}
+.us-parts-list li strong {
+  display: block;
+  color: var(--mm-text);
+  font-size: 0.92rem;
+  margin-bottom: 0.15rem;
+}
+.us-parts-list li span {
+  color: var(--mm-text-muted);
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+/* --- Pricing --- */
+
+.us-pricing-grid {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+.us-pricing-card {
+  background: var(--mm-surface);
+  border: 1px solid var(--mm-border);
+  border-radius: var(--mm-radius);
+  padding: 1.75rem;
+}
+.us-pricing-card--base {
+  border-color: var(--mm-accent);
+  box-shadow: 0 0 0 1px var(--mm-accent-soft);
+}
+.us-pricing-card__tier {
+  margin: 0 0 0.5rem;
+  font-family: var(--mm-font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--mm-text-faint);
+}
+.us-pricing-card__price {
+  margin: 0 0 1rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--mm-text);
+}
+.us-pricing-card__price span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--mm-text-muted);
+}
+.us-pricing-card__items {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+  border-top: 1px solid var(--mm-border);
+}
+.us-pricing-card__items li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--mm-border);
+  font-size: 0.85rem;
+  color: var(--mm-text-secondary);
+  font-family: var(--mm-font-mono);
+}
+.us-pricing-card__items--plain li {
+  justify-content: flex-start;
+}
+.us-pricing-card__items--plain li::before {
+  content: "+";
+  color: var(--mm-accent);
+  margin-right: 0.6rem;
+}
+.us-pricing-card__note {
+  margin: 0;
+  color: var(--mm-text-muted);
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+/* --- Spec panel width override for full spec sheet --- */
+
+.us-spec-panel--wide {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.us-spec-panel__grid--wide {
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 900px) {
+  .us-spec-panel__grid--wide {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .us-spec-panel__grid--wide {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Workflow --- */
+
+.us-workflow {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+.us-workflow__step {
+  border-top: 2px solid var(--mm-border-strong);
+  padding-top: 1rem;
+}
+.us-workflow__num {
+  margin: 0 0 0.5rem;
+  font-family: var(--mm-font-mono);
+  font-size: 0.8rem;
+  color: var(--mm-accent);
+}
+.us-workflow__step h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--mm-text);
+}
+.us-workflow__step p {
+  margin: 0;
+  color: var(--mm-text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* --- Results grid (reuses mm-sector media classes) --- */
+
+.us-results-grid {
+  max-width: 900px;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 650px) {
+  .us-results-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Survey CTA + floating button --- */
+
+.us-survey-ctas {
+  margin-top: 0.5rem;
+}
+
+.us-survey-fab {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.8rem 1.3rem;
+  background: var(--mm-accent);
+  color: #04140f;
+  border-radius: 999px;
+  font-family: var(--mm-font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  box-shadow: 0 12px 30px -10px #000000b3, 0 0 0 1px #04140f1a;
+  transition: transform 0.15s, box-shadow 0.15s, background-color 0.15s;
+}
+.us-survey-fab:hover {
+  background: var(--mm-accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px -10px #000000cc, 0 0 0 1px #04140f1a;
+}
+.us-survey-fab__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #04140f;
+  flex: none;
+  animation: us-fab-pulse 1.8s ease-in-out infinite;
+}
+@keyframes us-fab-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.7); }
+}
+
+@media (max-width: 650px) {
+  .us-survey-fab {
+    right: 14px;
+    bottom: 14px;
+    padding: 0.7rem 1.05rem;
+    font-size: 0.72rem;
+  }
+}
