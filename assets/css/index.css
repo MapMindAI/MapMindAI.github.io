@@ -256,13 +256,15 @@
 .mm-sector__figure {
   margin: 0;
 }
-.mm-sector__video {
+.mm-sector__video,
+.mm-sector__image {
   display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
   background: #000;
   border: 1px solid var(--mm-border);
   border-radius: var(--mm-radius-sm);
+  object-fit: cover;
 }
 .mm-sector__video--single {
   aspect-ratio: 16 / 9;

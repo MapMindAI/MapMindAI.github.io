@@ -166,6 +166,20 @@ css:
       </ul>
     </div>
   </div>
+
+  <div class="mm-sector mm-sector--reverse">
+    <div class="mm-sector__media">
+      <img class="mm-sector__image" src="{{ '/assets/img/gaussian_splatting.gif' | relative_url }}" alt="3D Gaussian Splatting reconstruction of a night-time canal town, captured from action-camera footage" loading="lazy">
+    </div>
+    <div class="mm-sector__copy">
+      <p class="mm-eyebrow">Sector 04</p>
+      <h3 class="mm-sector__title">3D Gaussian Splatting</h3>
+      <p class="mm-sector__desc">Turn ordinary action-camera footage — Insta360, GoPro, DJI — into full 3D Gaussian Splat reconstructions for immersive playback and mapping visualization, no LiDAR required.</p>
+      <ul class="mm-sector__links">
+        <li><a href="https://github.com/MapMindAI/EasyGaussianSplatting" target="_blank" rel="noopener">EasyGaussianSplatting ↗</a></li>
+      </ul>
+    </div>
+  </div>
 </section>
 
 <section id="projects" class="mm-section mm-section--muted">
