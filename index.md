@@ -58,25 +58,25 @@ css:
   <div class="mm-sector">
     <div class="mm-sector__media mm-sector__media--gallery">
       <figure class="mm-sector__figure">
-        <video class="mm-sector__video" controls preload="metadata" poster="{{ '/assets/videos/posters/color_mapping_1.jpg' | relative_url }}">
+        <video class="mm-sector__video" controls preload="none" poster="{{ '/assets/videos/posters/color_mapping_1.jpg' | relative_url }}">
           <source src="{{ '/assets/videos/color_mapping_1.mp4' | relative_url }}" type="video/mp4">
         </video>
         <figcaption class="mm-sector__caption">Color Mapping — Demo 1</figcaption>
       </figure>
       <figure class="mm-sector__figure">
-        <video class="mm-sector__video" controls preload="metadata" poster="{{ '/assets/videos/posters/color_mapping_2.jpg' | relative_url }}">
+        <video class="mm-sector__video" controls preload="none" poster="{{ '/assets/videos/posters/color_mapping_2.jpg' | relative_url }}">
           <source src="{{ '/assets/videos/color_mapping_2.mp4' | relative_url }}" type="video/mp4">
         </video>
         <figcaption class="mm-sector__caption">Color Mapping — Demo 2</figcaption>
       </figure>
       <figure class="mm-sector__figure">
-        <video class="mm-sector__video" controls preload="metadata" poster="{{ '/assets/videos/posters/rtk_mapping_1.jpg' | relative_url }}">
+        <video class="mm-sector__video" controls preload="none" poster="{{ '/assets/videos/posters/rtk_mapping_1.jpg' | relative_url }}">
           <source src="{{ '/assets/videos/rtk_mapping_1.mp4' | relative_url }}" type="video/mp4">
         </video>
         <figcaption class="mm-sector__caption">RTK-Verified Mapping — Demo 1</figcaption>
       </figure>
       <figure class="mm-sector__figure">
-        <video class="mm-sector__video" controls preload="metadata" poster="{{ '/assets/videos/posters/rtk_mapping_2.jpg' | relative_url }}">
+        <video class="mm-sector__video" controls preload="none" poster="{{ '/assets/videos/posters/rtk_mapping_2.jpg' | relative_url }}">
           <source src="{{ '/assets/videos/rtk_mapping_2.mp4' | relative_url }}" type="video/mp4">
         </video>
         <figcaption class="mm-sector__caption">RTK-Verified Mapping — Demo 2</figcaption>
@@ -95,7 +95,7 @@ css:
 
   <div class="mm-sector mm-sector--reverse">
     <div class="mm-sector__media">
-      <video class="mm-sector__video mm-sector__video--single" controls preload="metadata" poster="{{ '/assets/videos/posters/esp32_robot_test.jpg' | relative_url }}">
+      <video class="mm-sector__video mm-sector__video--single" controls preload="none" poster="{{ '/assets/videos/posters/esp32_robot_test.jpg' | relative_url }}">
         <source src="{{ '/assets/videos/esp32_robot_test.mp4' | relative_url }}" type="video/mp4">
       </video>
     </div>
@@ -113,13 +113,13 @@ css:
   <div class="mm-sector">
     <div class="mm-sector__media mm-sector__media--stack">
       <figure class="mm-sector__figure">
-        <video class="mm-sector__video mm-sector__video--single" controls preload="metadata" poster="{{ '/assets/videos/posters/da3_rk3588.jpg' | relative_url }}">
+        <video class="mm-sector__video mm-sector__video--single" controls preload="none" poster="{{ '/assets/videos/posters/da3_rk3588.jpg' | relative_url }}">
           <source src="{{ '/assets/videos/da3_rk3588.mp4' | relative_url }}" type="video/mp4">
         </video>
         <figcaption class="mm-sector__caption">DA3 split stream — RGB, depth, and 3D trajectory</figcaption>
       </figure>
       <figure class="mm-sector__figure">
-        <video class="mm-sector__video mm-sector__video--wide" controls preload="metadata" poster="{{ '/assets/videos/posters/arcore_da_depth_compare.jpg' | relative_url }}">
+        <video class="mm-sector__video mm-sector__video--wide" controls preload="none" poster="{{ '/assets/videos/posters/arcore_da_depth_compare.jpg' | relative_url }}">
           <source src="{{ '/assets/videos/arcore_da_depth_compare.mp4' | relative_url }}" type="video/mp4">
         </video>
         <figcaption class="mm-sector__caption">RGB vs. ARCore depth vs. Depth Anything depth</figcaption>
