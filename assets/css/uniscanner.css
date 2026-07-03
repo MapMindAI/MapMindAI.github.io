@@ -72,6 +72,9 @@ html {
 .us-hero__media img {
   display: block;
   width: 100%;
+  height: auto;
+  aspect-ratio: 1448 / 1086;
+  object-fit: cover;
   border-radius: var(--mm-radius);
   border: 1px solid var(--mm-border);
 }
@@ -101,6 +104,8 @@ html {
 .us-blueprint img {
   display: block;
   width: 100%;
+  height: auto;
+  aspect-ratio: 1448 / 1086;
   border-radius: var(--mm-radius-sm);
 }
 

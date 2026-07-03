@@ -227,16 +227,16 @@ css:
 <section class="mm-section mm-section--muted" id="survey">
   <div class="mm-section__head">
     <p class="mm-eyebrow">Help Shape UniScanner</p>
-    <h2 class="mm-section__title">Take the Survey</h2>
+    <h2 class="mm-section__title">Join Early Access</h2>
     <p class="mm-section__desc">Thinking of buying one, or just curious? A couple minutes of your feedback helps us prioritize what to build next.</p>
   </div>
   <div class="mm-hero__ctas us-survey-ctas">
-    <a href="https://deepmirror.sg.larksuite.com/share/base/form/shrlgiBYUPgo5PODDczFLXnTHPe" class="mm-btn mm-btn--primary" target="_blank" rel="noopener">Survey — English ↗</a>
-    <a href="https://deepmirror.sg.larksuite.com/share/base/form/shrlgL9xhLq2B0k2J0YleeGqvCg" class="mm-btn mm-btn--ghost" target="_blank" rel="noopener">问卷调查 — 中文 ↗</a>
+    <a href="https://deepmirror.sg.larksuite.com/share/base/form/shrlgiBYUPgo5PODDczFLXnTHPe" class="mm-btn mm-btn--primary" target="_blank" rel="noopener">Join Early Access — English ↗</a>
+    <a href="https://deepmirror.sg.larksuite.com/share/base/form/shrlgL9xhLq2B0k2J0YleeGqvCg" class="mm-btn mm-btn--ghost" target="_blank" rel="noopener">加入抢先体验 — 中文 ↗</a>
   </div>
 </section>
 
 <a href="#survey" class="us-survey-fab">
   <span class="us-survey-fab__dot"></span>
-  I Want One
+  Join Early Access
 </a>
