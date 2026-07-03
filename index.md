@@ -87,6 +87,7 @@ css:
       <h3 class="mm-sector__title">Unilidar Color 3D Scanner</h3>
       <p class="mm-sector__desc">Real-time colorized point clouds from the Unitree Lidar L2, fused with camera color and a live trajectory overlay. Mapping accuracy is verified against RTK GNSS ground truth, powered by FAST-LIO2 and ESIKF sensor fusion.</p>
       <ul class="mm-sector__links">
+        <li><a href="{{ 'uniscanner' | relative_url }}">UniScanner — full product page ↗</a></li>
         <li><a href="https://github.com/MapMindAI/UniLidar-SDK-Mapping" target="_blank" rel="noopener">UniLidar-SDK-Mapping ↗</a></li>
         <li><a href="https://github.com/MapMindAI/UniLidar-SDK-Collection" target="_blank" rel="noopener">UniLidar-SDK-Collection ↗</a></li>
       </ul>
