@@ -1,0 +1,40 @@
+- title: UniLidar-SDK-Mapping
+  tag: SLAM
+  description: LiDAR-based mapping using the FAST-LIO2 algorithm on Unitree Lidar L2 data.
+  url: https://github.com/MapMindAI/UniLidar-SDK-Mapping
+- title: VisualLocalizationAndroidClient
+  tag: Localization
+  description: Converts older Android phones into affordable RGBD + VIO modules for robotics.
+  url: https://github.com/MapMindAI/VisualLocalizationAndroidClient
+- title: VisualLocalizationService
+  tag: Localization
+  description: Client-server architecture for running visual localization as a shared service.
+  url: https://github.com/MapMindAI/VisualLocalizationService
+- title: EasyTensorRT
+  tag: Edge AI
+  description: Dockerized inference service supporting SuperPoint, LightGlue, and Depth Anything 3 with ONNX/TensorRT compatibility.
+  url: https://github.com/MapMindAI/EasyTensorRT
+- title: DA3-RK3588
+  tag: Edge AI
+  description: Visual odometry pipeline built on Depth Anything 3, tuned for RK3588 embedded processors.
+  url: https://github.com/MapMindAI/DA3-RK3588
+- title: DepthAnythingOnnx
+  tag: Edge AI
+  description: ONNX model exports for Depth Anything versions 2 and 3, including video variants.
+  url: https://github.com/MapMindAI/DepthAnythingOnnx
+- title: ESP32-Robot-Control
+  tag: Robotics
+  description: Robot control system for ESP32 platforms driving servos and actuators.
+  url: https://github.com/MapMindAI/ESP32-Robot-Control
+- title: ESP32-Robot-WebRTC
+  tag: Robotics
+  description: WebRTC streaming and MQTT control system with CAN bus integration for ESP32 servo robots.
+  url: https://github.com/MapMindAI/ESP32-Robot-WebRTC
+- title: UniLidar-SDK-Collection
+  tag: SLAM
+  description: Calibration and data collection tooling for the Unitree Lidar L2 SDK.
+  url: https://github.com/MapMindAI/UniLidar-SDK-Collection
+- title: EasyGaussianSplatting
+  tag: 3D Reconstruction
+  description: Converts footage from action cameras (Insta360, GoPro, DJI) into Gaussian Splatting format.
+  url: https://github.com/MapMindAI/EasyGaussianSplatting

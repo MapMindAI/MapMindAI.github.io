@@ -1,0 +1,280 @@
+/*
+  MapMindAI dark / high-tech theme.
+  Loaded site-wide after main.css - overrides Beautiful Jekyll's light theme
+  with a dark, technical look (system-ui type, mono accents, teal/blue glow).
+*/
+
+:root {
+  --mm-bg: #07080a;
+  --mm-bg-soft: #0c0e11;
+  --mm-surface: #101317;
+  --mm-surface-2: #15181d;
+  --mm-border: #ffffff1a;
+  --mm-border-strong: #ffffff30;
+  --mm-text: #eef0f2;
+  --mm-text-secondary: #c2c6cc;
+  --mm-text-muted: #8a8f98;
+  --mm-text-faint: #5b6069;
+  --mm-accent: #2fe6c9;
+  --mm-accent-hover: #58f0d8;
+  --mm-accent-soft: #2fe6c91f;
+  --mm-accent-2: #6fb2ff;
+  --mm-accent-2-soft: #6fb2ff1f;
+  --mm-font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --mm-font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  --mm-radius: 10px;
+  --mm-radius-sm: 6px;
+}
+
+html, body {
+  background-color: var(--mm-bg);
+}
+
+body {
+  font-family: var(--mm-font-sans) !important;
+  color: var(--mm-text-secondary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--mm-font-sans) !important;
+  color: var(--mm-text);
+  letter-spacing: -0.02em;
+}
+
+p a, .post-entry a, .container-md a {
+  color: var(--mm-accent);
+}
+p a:hover, .post-entry a:hover, .container-md a:hover {
+  color: var(--mm-accent-hover);
+}
+
+::selection {
+  background-color: var(--mm-accent-soft);
+  color: var(--mm-text);
+}
+
+hr {
+  border-color: var(--mm-border);
+}
+
+blockquote {
+  color: var(--mm-text-muted);
+  border-left: 2px solid var(--mm-border-strong);
+  padding-left: 1rem;
+}
+
+code, pre, kbd {
+  font-family: var(--mm-font-mono);
+}
+
+p code, li code {
+  background: var(--mm-surface-2);
+  border: 1px solid var(--mm-border);
+  color: var(--mm-accent);
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
+  font-size: 0.88em;
+}
+
+pre {
+  background: var(--mm-surface) !important;
+  border: 1px solid var(--mm-border);
+  border-radius: var(--mm-radius-sm);
+}
+
+/* --- Navbar --- */
+
+.navbar-custom {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom.top-nav-short .navbar-brand,
+.navbar-custom.top-nav-short-permanent .navbar-brand {
+  font-family: var(--mm-font-mono);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-size: 1.05rem;
+  color: var(--mm-text) !important;
+}
+
+.navbar-custom .navbar-brand::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-left: 8px;
+  margin-bottom: 2px;
+  border-radius: 50%;
+  background: var(--mm-accent);
+  box-shadow: 0 0 8px var(--mm-accent);
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  font-family: var(--mm-font-mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover,
+.navbar-custom .navbar-nav .nav-link:focus {
+  color: var(--mm-accent) !important;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* --- Buttons / tags / pagination --- */
+
+.btn-primary,
+.tag-btn {
+  background-color: transparent !important;
+  border: 1px solid var(--mm-border-strong) !important;
+  color: var(--mm-text) !important;
+  font-family: var(--mm-font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: var(--mm-radius-sm) !important;
+  transition: border-color 0.15s, color 0.15s, background-color 0.15s;
+}
+
+.btn-primary:hover,
+.tag-btn:hover {
+  border-color: var(--mm-accent) !important;
+  color: var(--mm-accent) !important;
+  background-color: var(--mm-accent-soft) !important;
+}
+
+.pagination .page-link {
+  background: var(--mm-surface);
+  border-color: var(--mm-border);
+  color: var(--mm-text-secondary);
+}
+.pagination .page-link:hover {
+  color: var(--mm-accent);
+  border-color: var(--mm-accent);
+  background: var(--mm-accent-soft);
+}
+
+/* --- Search --- */
+
+#nav-search-form {
+  background: var(--mm-surface) !important;
+  border: 1px solid var(--mm-border-strong) !important;
+}
+#nav-search-form input {
+  background: transparent !important;
+  color: var(--mm-text) !important;
+  font-family: var(--mm-font-mono);
+}
+
+/* --- Footer --- */
+
+footer {
+  border-top: 1px solid var(--mm-border);
+}
+
+.footer-links .fa-circle {
+  color: var(--mm-surface-2);
+}
+.footer-links a:hover .fa-circle {
+  color: var(--mm-accent-soft);
+}
+.footer-links a:hover .fa-stack-1x {
+  color: var(--mm-accent) !important;
+}
+
+.copyright, .theme-by {
+  font-family: var(--mm-font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+}
+
+/* --- Tags page --- */
+
+#full-tags-list h2 {
+  border-bottom: 1px solid var(--mm-border);
+  padding-bottom: 0.5rem;
+}
+.tag-entry {
+  border-bottom: 1px solid var(--mm-border);
+}
+.tag-entry a {
+  color: var(--mm-text-secondary);
+}
+.tag-entry a:hover {
+  color: var(--mm-accent);
+}
+
+/* --- Blog post list (kept for future posts) --- */
+
+.post-title, .post-title a {
+  color: var(--mm-text);
+}
+.post-meta, .post-subtitle {
+  color: var(--mm-text-muted);
+}
+.blog-tags a {
+  color: var(--mm-text-secondary);
+  border: 1px solid var(--mm-border);
+  border-radius: 999px;
+  padding: 0.1rem 0.6rem;
+  font-family: var(--mm-font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+}
+
+/* --- Back to top button (tree.css) --- */
+
+#myBtn {
+  background-color: var(--mm-surface-2) !important;
+  border: 1px solid var(--mm-border-strong) !important;
+}
+#myBtn:hover {
+  background-color: var(--mm-accent-soft) !important;
+  border-color: var(--mm-accent) !important;
+}
+#myBtn a {
+  font-family: var(--mm-font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* --- Page/post header (no cover image) --- */
+
+.intro-header .page-heading h1,
+.intro-header .post-heading h1 {
+  color: var(--mm-text);
+}
+.intro-header .page-heading .page-subheading,
+.intro-header .post-heading .post-subheading {
+  color: var(--mm-text-muted);
+}
+.intro-header .page-heading hr.small {
+  border-color: var(--mm-border-strong);
+}
+
+/* --- Scrollbar polish --- */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--mm-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--mm-surface-2);
+  border-radius: 999px;
+  border: 2px solid var(--mm-bg);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--mm-border-strong);
+}

@@ -1,0 +1,11 @@
+# for more icons https://fontawesome.com/v4/icons/
+- icon: 🛰️
+  content: <strong>LiDAR &amp; Visual SLAM</strong> — real-time mapping and pose estimation with FAST-LIO2, ESIKF/ESKF sensor fusion, and 6DOF/3DOF localization.
+- icon: 📍
+  content: <strong>Visual Localization</strong> — turn any camera, even an old Android phone, into an RGBD + VIO localization module for robots and vehicles.
+- icon: 🧠
+  content: <strong>Edge AI Inference</strong> — Dockerized ONNX / TensorRT pipelines for SuperPoint, LightGlue, and Depth Anything running on embedded hardware.
+- icon: 🤖
+  content: <strong>Robot Control &amp; Streaming</strong> — ESP32-based servo control with WebRTC video, MQTT, and CAN bus integration.
+- icon: 🌐
+  content: <strong>3D Reconstruction</strong> — convert action-camera footage into Gaussian Splatting scenes for mapping and visualization.
