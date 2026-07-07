@@ -79,6 +79,9 @@ css:
       <p>The colored point cloud and camera trajectory can further train a Gaussian Splatting scene for immersive, browsable 3D.</p>
     </div>
   </div>
+  <div class="us-workflow-diagram">
+    <img src="{{ '/assets/img/uniscanner/how-it-works.png' | relative_url }}" alt="Diagram of the UniScanner pipeline: scan and reconstruction produce a raw colored point cloud, which is simplified into a 3D design model of the room and garden, then displayed in 3D with measurement, inspection, and design annotations" loading="lazy">
+  </div>
 </section>
 
 

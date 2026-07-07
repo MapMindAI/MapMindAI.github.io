@@ -286,6 +286,23 @@ html {
   font-size: 0.9rem;
   line-height: 1.6;
 }
+.us-workflow-diagram {
+  max-width: 1180px;
+  margin: 2.5rem auto 0;
+  background: var(--mm-surface);
+  border: 1px solid var(--mm-border);
+  border-radius: var(--mm-radius);
+  padding: clamp(8px, 1.5vw, 20px);
+  box-shadow: 0 20px 50px -30px #000000d9;
+}
+.us-workflow-diagram img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1914 / 655;
+  object-fit: contain;
+  border-radius: var(--mm-radius-sm);
+}
 
 /* --- Results grid (reuses mm-sector media classes) --- */
 
