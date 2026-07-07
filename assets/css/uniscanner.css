@@ -26,10 +26,10 @@ html {
 .us-hero__inner {
   position: relative;
   z-index: 1;
-  max-width: 1180px;
+  max-width: 1320px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
   gap: clamp(2rem, 5vw, 4rem);
   align-items: center;
 }
@@ -88,25 +88,62 @@ html {
   }
 }
 
-/* --- Anatomy / blueprint images --- */
+/* --- User Case banner --- */
 
-.us-anatomy,
-.us-blueprint {
-  max-width: 1180px;
-  margin: 0 auto 2.5rem;
-  background: var(--mm-surface);
-  border: 1px solid var(--mm-border);
-  border-radius: var(--mm-radius);
-  padding: clamp(10px, 2vw, 28px);
-  box-shadow: 0 20px 50px -30px #000000d9;
+.us-usecase {
+  position: relative;
+  overflow: hidden;
 }
-.us-anatomy img,
-.us-blueprint img {
+.us-usecase__img {
   display: block;
   width: 100%;
   height: auto;
+  aspect-ratio: 1672 / 941;
+  object-fit: cover;
+}
+.us-usecase__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, transparent 0%, transparent 42%, #101317b3 68%, #101317e6 100%);
+  pointer-events: none;
+}
+.us-usecase__copy {
+  position: absolute;
+  top: 50%;
+  right: clamp(20px, 6vw, 72px);
+  transform: translateY(-50%);
+  max-width: 420px;
+  text-align: right;
+}
+.us-usecase__title {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.4rem, 3vw, 2.1rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+.us-usecase__desc {
+  margin: 0;
+  color: #e6e8ebd9;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+@media (max-width: 650px) {
+  .us-usecase__overlay {
+    background: linear-gradient(to right, transparent 0%, #101317b3 30%, #101317e6 100%);
+  }
+  .us-usecase__copy {
+    max-width: 72%;
+  }
+}
+
+/* --- Diagram images (exploded view, engineering drawing) --- */
+
+.mm-sector__image--diagram {
   aspect-ratio: 1448 / 1086;
-  border-radius: var(--mm-radius-sm);
+  object-fit: contain;
+  background: var(--mm-surface);
+  padding: clamp(8px, 1.5vw, 20px);
 }
 
 .us-parts-list {
@@ -218,26 +255,6 @@ html {
   line-height: 1.55;
 }
 
-/* --- Spec panel width override for full spec sheet --- */
-
-.us-spec-panel--wide {
-  max-width: 1180px;
-  margin: 0 auto;
-}
-.us-spec-panel__grid--wide {
-  grid-template-columns: repeat(4, 1fr);
-}
-@media (max-width: 900px) {
-  .us-spec-panel__grid--wide {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 500px) {
-  .us-spec-panel__grid--wide {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* --- Workflow --- */
 
 .us-workflow {
@@ -283,10 +300,87 @@ html {
   }
 }
 
+/* --- Open source + build CTA merge --- */
+
+.mm-cta__inner--wide {
+  max-width: 900px;
+}
+.mm-cta .mm-project-grid {
+  margin: 2rem auto 2.5rem;
+  text-align: left;
+}
+.mm-cta .mm-project-card {
+  text-align: left;
+}
+
 /* --- Survey CTA + floating button --- */
 
+.us-survey-card {
+  position: relative;
+  overflow: hidden;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: clamp(44px, 6vw, 68px) clamp(24px, 6vw, 60px);
+  text-align: center;
+  background: var(--mm-surface);
+  border: 1px solid var(--mm-accent-soft);
+  border-radius: var(--mm-radius);
+  box-shadow: 0 30px 80px -40px #000000d9, 0 0 40px -20px var(--mm-accent-soft);
+}
+.us-survey-card__glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 90% 80% at 50% -10%, var(--mm-accent-soft), transparent 65%);
+  pointer-events: none;
+}
+.us-survey-card__badge {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.4rem 0.9rem;
+  margin-bottom: 1.25rem;
+  background: var(--mm-accent-soft);
+  border: 1px solid var(--mm-accent);
+  border-radius: 999px;
+  color: var(--mm-accent);
+  font-family: var(--mm-font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.us-survey-card__badge-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--mm-accent);
+  flex: none;
+  animation: us-fab-pulse 1.8s ease-in-out infinite;
+}
+.us-survey-card__title {
+  position: relative;
+  margin: 0 0 0.9rem;
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.us-survey-card__desc {
+  position: relative;
+  max-width: 560px;
+  margin: 0 auto 2rem;
+  color: var(--mm-text-muted);
+  font-size: 1rem;
+  line-height: 1.65;
+}
 .us-survey-ctas {
+  position: relative;
   margin-top: 0.5rem;
+}
+.us-survey-btn {
+  min-height: 52px;
+  padding: 0 2rem;
+  font-size: 0.9rem;
 }
 
 .us-survey-fab {
