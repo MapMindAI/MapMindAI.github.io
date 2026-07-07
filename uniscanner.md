@@ -51,6 +51,37 @@ css:
   </div>
 </section>
 
+<section class="mm-section">
+  <div class="mm-section__head">
+    <p class="mm-eyebrow">How It Works</p>
+    <h2 class="mm-section__title">From Point Cloud to 3D Design Model</h2>
+    <p class="mm-section__desc">Beyond a colored point cloud — auto-detected walls, floors, and openings turn a raw scan into a clean, simplified 3D model ready for measurement and design.</p>
+  </div>
+  <div class="us-workflow">
+    <div class="us-workflow__step">
+      <p class="us-workflow__num">01</p>
+      <h3>Data Acquisition</h3>
+      <p>Lidar + IMU + RGB (+ optional RTK), driven by the host with a Web UI for remote control, logs, and recording.</p>
+    </div>
+    <div class="us-workflow__step">
+      <p class="us-workflow__num">02</p>
+      <h3>Reconstruction</h3>
+      <p>Offline or on-device laser-inertial-rgb mapping turns the raw point cloud and trajectory into a colored dense reconstruction.</p>
+    </div>
+    <div class="us-workflow__step">
+      <p class="us-workflow__num">03</p>
+      <h3>Simplified 3D Design Model</h3>
+      <p>Walls, floors, doors, and windows are auto-detected from the colored point cloud and simplified into a clean, to-scale 3D model ready for measurement and design work.</p>
+    </div>
+    <div class="us-workflow__step">
+      <p class="us-workflow__num">04</p>
+      <h3>Visual 3D Display</h3>
+      <p>The colored point cloud and camera trajectory can further train a Gaussian Splatting scene for immersive, browsable 3D.</p>
+    </div>
+  </div>
+</section>
+
+
 <section class="mm-section mm-section--muted">
   <div class="mm-section__head">
     <p class="mm-eyebrow">Real Results</p>
@@ -189,36 +220,6 @@ css:
   </div>
 </section>
 
-<section class="mm-section">
-  <div class="mm-section__head">
-    <p class="mm-eyebrow">How It Works</p>
-    <h2 class="mm-section__title">From Point Cloud to 3D Design Model</h2>
-    <p class="mm-section__desc">Beyond a colored point cloud — auto-detected walls, floors, and openings turn a raw scan into a clean, simplified 3D model ready for measurement and design.</p>
-  </div>
-  <div class="us-workflow">
-    <div class="us-workflow__step">
-      <p class="us-workflow__num">01</p>
-      <h3>Data Acquisition</h3>
-      <p>Lidar + IMU + RGB (+ optional RTK), driven by the host with a Web UI for remote control, logs, and recording.</p>
-    </div>
-    <div class="us-workflow__step">
-      <p class="us-workflow__num">02</p>
-      <h3>Reconstruction</h3>
-      <p>Offline or on-device laser-inertial-rgb mapping turns the raw point cloud and trajectory into a colored dense reconstruction.</p>
-    </div>
-    <div class="us-workflow__step">
-      <p class="us-workflow__num">03</p>
-      <h3>Simplified 3D Design Model</h3>
-      <p>Walls, floors, doors, and windows are auto-detected from the colored point cloud and simplified into a clean, to-scale 3D model ready for measurement and design work.</p>
-    </div>
-    <div class="us-workflow__step">
-      <p class="us-workflow__num">04</p>
-      <h3>Visual 3D Display</h3>
-      <p>The colored point cloud and camera trajectory can further train a Gaussian Splatting scene for immersive, browsable 3D.</p>
-    </div>
-  </div>
-</section>
-
 <!-- <section class="mm-cta" id="open-source">
   <div class="mm-cta__glow"></div>
   <div class="mm-cta__inner mm-cta__inner--wide">
@@ -250,7 +251,8 @@ css:
   <div class="us-survey-card">
     <div class="us-survey-card__glow"></div>
     <span class="us-survey-card__badge"><span class="us-survey-card__badge-dot"></span>Early Access · Limited Spots</span>
-    <h2 class="us-survey-card__title">Help Shape UniScanner</h2>
+    <p class="mm-eyebrow">Help Shape UniScanner</p>
+    <h2 class="us-survey-card__title">Join Early Access</h2>
     <p class="us-survey-card__desc">Thinking of buying one, or just curious? A 2-minute survey helps us prioritize what to build next — early respondents get first access when we ship.</p>
     <div class="mm-hero__ctas us-survey-ctas">
       <a href="https://deepmirror.sg.larksuite.com/share/base/form/shrlgiBYUPgo5PODDczFLXnTHPe" class="mm-btn mm-btn--primary us-survey-btn" target="_blank" rel="noopener">Join Early Access — English ↗</a>
