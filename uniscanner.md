@@ -192,23 +192,24 @@ css:
 <section class="mm-section">
   <div class="mm-section__head">
     <p class="mm-eyebrow">How It Works</p>
-    <h2 class="mm-section__title">From Raw Scan to 3D Scene</h2>
+    <h2 class="mm-section__title">From Point Cloud to 3D Design Model</h2>
+    <p class="mm-section__desc">Beyond a colored point cloud — auto-detected walls, floors, and openings turn a raw scan into a clean, simplified 3D model ready for measurement and design.</p>
   </div>
   <div class="us-workflow">
     <div class="us-workflow__step">
       <p class="us-workflow__num">01</p>
       <h3>Data Acquisition</h3>
-      <p>UniLidar L2 + IMU + RGB (+ optional RTK), driven by the RK3566 host with a Web UI for remote control, logs, and recording.</p>
+      <p>Lidar + IMU + RGB (+ optional RTK), driven by the host with a Web UI for remote control, logs, and recording.</p>
     </div>
     <div class="us-workflow__step">
       <p class="us-workflow__num">02</p>
-      <h3>Laser Reconstruction</h3>
-      <p>Offline or on-device FAST-LIO2 / laser-inertial mapping turns the raw point cloud and trajectory into a dense reconstruction.</p>
+      <h3>Reconstruction</h3>
+      <p>Offline or on-device laser-inertial-rgb mapping turns the raw point cloud and trajectory into a colored dense reconstruction.</p>
     </div>
     <div class="us-workflow__step">
       <p class="us-workflow__num">03</p>
-      <h3>Color Fusion</h3>
-      <p>RGB images are registered against the reconstructed point cloud and pose to project color onto the 3D geometry.</p>
+      <h3>Simplified 3D Design Model</h3>
+      <p>Walls, floors, doors, and windows are auto-detected from the colored point cloud and simplified into a clean, to-scale 3D model ready for measurement and design work.</p>
     </div>
     <div class="us-workflow__step">
       <p class="us-workflow__num">04</p>
@@ -218,7 +219,7 @@ css:
   </div>
 </section>
 
-<section class="mm-cta" id="open-source">
+<!-- <section class="mm-cta" id="open-source">
   <div class="mm-cta__glow"></div>
   <div class="mm-cta__inner mm-cta__inner--wide">
     <p class="mm-eyebrow">Open Source</p>
@@ -243,7 +244,7 @@ css:
       <a href="{{ '' | relative_url }}#showcase" class="mm-btn mm-btn--ghost">Back to MapMindAI</a>
     </div>
   </div>
-</section>
+</section> -->
 
 <section class="mm-section" id="survey">
   <div class="us-survey-card">
