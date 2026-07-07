@@ -47,29 +47,57 @@ css:
   </div>
   <div class="mm-sector__media mm-sector__media--gallery us-results-grid">
     <figure class="mm-sector__figure">
-      <video class="mm-sector__video" controls preload="none" poster="{{ '/assets/videos/posters/color_mapping_1.jpg' | relative_url }}">
+      <video class="mm-sector__video us-autoplay-video" controls muted loop playsinline preload="none" poster="{{ '/assets/videos/posters/color_mapping_1.jpg' | relative_url }}">
         <source src="{{ '/assets/videos/color_mapping_1.mp4' | relative_url }}" type="video/mp4">
       </video>
       <figcaption class="mm-sector__caption">Colored Point Cloud — Demo 1</figcaption>
     </figure>
     <figure class="mm-sector__figure">
-      <video class="mm-sector__video" controls preload="none" poster="{{ '/assets/videos/posters/color_mapping_2.jpg' | relative_url }}">
+      <video class="mm-sector__video us-autoplay-video" controls muted loop playsinline preload="none" poster="{{ '/assets/videos/posters/color_mapping_2.jpg' | relative_url }}">
         <source src="{{ '/assets/videos/color_mapping_2.mp4' | relative_url }}" type="video/mp4">
       </video>
       <figcaption class="mm-sector__caption">Colored Point Cloud — Demo 2</figcaption>
     </figure>
     <figure class="mm-sector__figure">
-      <video class="mm-sector__video" controls preload="none" poster="{{ '/assets/videos/posters/rtk_mapping_1.jpg' | relative_url }}">
+      <video class="mm-sector__video us-autoplay-video" controls muted loop playsinline preload="none" poster="{{ '/assets/videos/posters/rtk_mapping_1.jpg' | relative_url }}">
         <source src="{{ '/assets/videos/rtk_mapping_1.mp4' | relative_url }}" type="video/mp4">
       </video>
       <figcaption class="mm-sector__caption">RTK-Verified Mapping — Demo 1</figcaption>
     </figure>
     <figure class="mm-sector__figure">
-      <video class="mm-sector__video" controls preload="none" poster="{{ '/assets/videos/posters/rtk_mapping_2.jpg' | relative_url }}">
+      <video class="mm-sector__video us-autoplay-video" controls muted loop playsinline preload="none" poster="{{ '/assets/videos/posters/rtk_mapping_2.jpg' | relative_url }}">
         <source src="{{ '/assets/videos/rtk_mapping_2.mp4' | relative_url }}" type="video/mp4">
       </video>
       <figcaption class="mm-sector__caption">RTK-Verified Mapping — Demo 2</figcaption>
     </figure>
+  </div>
+</section>
+
+<script>
+  (function () {
+    var videos = document.querySelectorAll('.us-autoplay-video');
+    if (!videos.length || !('IntersectionObserver' in window)) return;
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.play().catch(function () {});
+        } else {
+          entry.target.pause();
+        }
+      });
+    }, { threshold: 0.5 });
+    videos.forEach(function (video) { observer.observe(video); });
+  })();
+</script>
+
+<section class="mm-section" id="use-case">
+  <div class="mm-section__head">
+    <p class="mm-eyebrow">User Case</p>
+    <h2 class="mm-section__title">Measure and design any space</h2>
+    <p class="mm-section__desc">Walk through a room once and get a colored, to-scale 3D capture ready for measurement, layout, and design work.</p>
+  </div>
+  <div class="us-anatomy">
+    <img src="{{ '/assets/img/uniscanner/usercase_room.png' | relative_url }}" alt="UniScanner colored 3D scan of a room used for measuring and designing the space" width="1672" height="941">
   </div>
 </section>
 
