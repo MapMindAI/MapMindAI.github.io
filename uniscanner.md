@@ -22,7 +22,9 @@ css:
       <p class="us-hero__price"><span class="us-hero__price-value">~$700</span> base build · <a href="#configurations">optional upgrades</a></p>
     </div>
     <div class="us-hero__media">
-      <img src="{{ '/assets/img/uniscanner/hero.jpg' | relative_url }}" alt="UniScanner handheld 3D scanner with live point cloud scan on tablet and phone" width="1448" height="1086">
+      <video class="us-trailer__video" controls autoplay muted playsinline preload="none" poster="{{ '/assets/videos/posters/uniscanner_trailer.jpg' | relative_url }}">
+        <source src="{{ '/assets/videos/uniscanner_trailer.mp4' | relative_url }}" type="video/mp4">
+      </video>
     </div>
   </div>
 </section>

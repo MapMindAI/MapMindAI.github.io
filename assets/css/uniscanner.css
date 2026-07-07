@@ -336,3 +336,24 @@ html {
     font-size: 0.72rem;
   }
 }
+
+/* --- Trailer --- */
+
+.us-trailer {
+  padding-top: 0;
+  padding-bottom: clamp(48px, 6vw, 80px);
+  background: #000;
+}
+.us-trailer__inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.us-trailer__video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border: 1px solid var(--mm-border);
+  border-radius: var(--mm-radius);
+  box-shadow: 0 20px 50px -30px #000000d9;
+}
