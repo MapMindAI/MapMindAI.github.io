@@ -79,17 +79,7 @@ css:
       <p>The colored point cloud and camera trajectory can further train a Gaussian Splatting scene for immersive, browsable 3D.</p>
     </div>
   </div>
-  <div class="us-workflow-diagram">
-    <img src="{{ '/assets/img/uniscanner/how-it-works.png' | relative_url }}" alt="Diagram of the UniScanner pipeline: scan and reconstruction produce a raw colored point cloud, which is simplified into a 3D design model of the room and garden, then displayed in 3D with measurement, inspection, and design annotations" loading="lazy">
-  </div>
-</section>
-
-
-<section class="mm-section mm-section--muted">
-  <div class="mm-section__head">
-    <p class="mm-eyebrow">Real Results</p>
-    <h2 class="mm-section__title">Not a Render — Real Scans</h2>
-  </div>
+  <p></p>
   <div class="mm-sector__media mm-sector__media--gallery us-results-grid">
     <figure class="mm-sector__figure">
       <video class="mm-sector__video us-autoplay-video" controls muted loop playsinline preload="none" poster="{{ '/assets/videos/posters/color_mapping_1.jpg' | relative_url }}">
@@ -134,6 +124,68 @@ css:
     videos.forEach(function (video) { observer.observe(video); });
   })();
 </script>
+
+<section class="mm-section mm-section--dark">
+  <div class="mm-section__head">
+    <p class="mm-eyebrow">Product Direction</p>
+    <h2 class="mm-section__title">
+      A Hardware-Assisted Upgrade to 3D Scanning
+    </h2>
+    <p class="mm-section__desc">
+      Our direction is to go one step further:
+      use a dedicated LiDAR + RGB capture device to create higher-confidence geometry,
+      cleaner structural models, professional reports, and realistic 3D previews for
+      renovation, property records, and outdoor planning.
+    </p>
+  </div>
+
+  <div class="us-workflow">
+    <div class="us-workflow__step">
+      <p class="us-workflow__num">01</p>
+      <h3>Dedicated LiDAR Home Scan</h3>
+      <p>
+        Scan rooms, apartments, houses, gardens, and renovation sites with a handheld
+        LiDAR + RGB device. Compared with phone-only scanning, the goal is more reliable
+        geometry, better scale consistency, and stronger support for larger or more complex
+        spaces.
+      </p>
+    </div>
+
+    <div class="us-workflow__step">
+      <p class="us-workflow__num">02</p>
+      <h3>Measured Structural Model</h3>
+      <p>
+        The scan is converted into a simplified 3D design model with auto-detected walls,
+        floors, ceilings, doors, windows, openings, stairs, and key outdoor elements such
+        as paths, plants, fences, and gazebos.
+      </p>
+    </div>
+
+    <div class="us-workflow__step">
+      <p class="us-workflow__num">03</p>
+      <h3>Inspection & Planning Report</h3>
+      <p>
+        Generate a practical report for renovation and communication: room size, ceiling
+        height, floor area, opening dimensions, structural annotations, before / after
+        comparison, and warnings such as uneven floor or floor depression.
+      </p>
+    </div>
+
+    <div class="us-workflow__step">
+      <p class="us-workflow__num">04</p>
+      <h3>Realistic 3D Preview</h3>
+      <p>
+        Beyond the measured model, RGB images and trajectory can produce a realistic
+        Gaussian Splatting scene. Users can preview furniture, renovation effects, or
+        outdoor additions such as a virtual gazebo directly inside a browsable 3D scene.
+      </p>
+    </div>
+  </div>
+  <div class="us-workflow-diagram">
+    <img src="{{ '/assets/img/uniscanner/how-it-works.png' | relative_url }}" alt="Diagram showing a dedicated LiDAR home scan converted into a measured structural model, an inspection and planning report with floor plan and dimensions, and a realistic 3D preview of the interior and outdoor Gaussian Splatting scene" loading="lazy">
+  </div>
+</section>
+
 
 <section class="mm-section">
   <div class="mm-section__head">
@@ -258,8 +310,7 @@ css:
     <h2 class="us-survey-card__title">Join Early Access</h2>
     <p class="us-survey-card__desc">Thinking of buying one, or just curious? A 2-minute survey helps us prioritize what to build next — early respondents get first access when we ship.</p>
     <div class="mm-hero__ctas us-survey-ctas">
-      <a href="https://deepmirror.sg.larksuite.com/share/base/form/shrlgiBYUPgo5PODDczFLXnTHPe" class="mm-btn mm-btn--primary us-survey-btn" target="_blank" rel="noopener">Join Early Access — English ↗</a>
-      <a href="https://deepmirror.sg.larksuite.com/share/base/form/shrlgL9xhLq2B0k2J0YleeGqvCg" class="mm-btn mm-btn--ghost us-survey-btn" target="_blank" rel="noopener">加入抢先体验 — 中文 ↗</a>
+      <a href="https://deepmirror.sg.larksuite.com/share/base/form/shrlgiBYUPgo5PODDczFLXnTHPe" class="mm-btn mm-btn--primary us-survey-btn" target="_blank" rel="noopener">Join Early Access ↗</a>
     </div>
   </div>
 </section>

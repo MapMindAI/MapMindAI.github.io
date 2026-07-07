@@ -287,7 +287,7 @@ html {
   line-height: 1.6;
 }
 .us-workflow-diagram {
-  max-width: 1180px;
+  max-width: 1500px;
   margin: 2.5rem auto 0;
   background: var(--mm-surface);
   border: 1px solid var(--mm-border);
@@ -299,7 +299,7 @@ html {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 1914 / 655;
+  aspect-ratio: 1915 / 610;
   object-fit: contain;
   border-radius: var(--mm-radius-sm);
 }
