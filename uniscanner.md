@@ -186,6 +186,77 @@ css:
   </div>
 </section>
 
+<section class="mm-section">
+  <div class="mm-sector">
+    <div class="mm-sector__media">
+      <img class="mm-sector__image" src="{{ '/assets/img/uniscanner/inspection-report.png' | relative_url }}" alt="Indoor inspection and planning report view showing a scanned apartment with floor plan, dimensions, ceiling height, and floor-level warning overlays" loading="lazy">
+    </div>
+    <div class="mm-sector__copy">
+      <p class="mm-eyebrow">Indoor</p>
+      <h3 class="mm-sector__title">Inspection &amp; Planning Report</h3>
+      <p class="mm-sector__desc">Turn a walkthrough scan into a report that is easier to share with owners, designers, and contractors. Room dimensions, ceiling heights, openings, and layout details can be organized into one practical planning view.</p>
+      <div class="mm-pipeline__row mm-pipeline__row--inline">
+        <span>Scan</span>
+        <span class="mm-pipeline__arrow">-></span>
+        <span>Measured model</span>
+        <span class="mm-pipeline__arrow">-></span>
+        <span>Inspection report</span>
+      </div>
+      <ul class="us-usecase-points">
+        <li>Room size, ceiling height, and floor area in one report</li>
+        <li>Doors, windows, and openings ready for renovation planning</li>
+        <li>One view that is easier to review with owners and contractors</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="mm-sector mm-sector--reverse">
+    <div class="mm-sector__media">
+      <img class="mm-sector__image" src="{{ '/assets/img/uniscanner/abnormal-detection.png' | relative_url }}" alt="House scan inspection view showing detected abnormalities including uneven floor and a crack on the ceiling highlighted with technical warning overlays" loading="lazy">
+    </div>
+    <div class="mm-sector__copy">
+      <p class="mm-eyebrow">Inspection</p>
+      <h3 class="mm-sector__title">Detect Abnormal Conditions</h3>
+      <p class="mm-sector__desc">When inspecting a house scan, UniScanner can highlight abnormal areas that need attention. Uneven floors, local depressions, and ceiling cracks can be surfaced visually so the user knows what should be checked or fixed first.</p>
+      <div class="mm-pipeline__row mm-pipeline__row--inline">
+        <span>House scan</span>
+        <span class="mm-pipeline__arrow">-></span>
+        <span>Surface analysis</span>
+        <span class="mm-pipeline__arrow">-></span>
+        <span>Issue alerts</span>
+      </div>
+      <ul class="us-usecase-points">
+        <li>Detect uneven floor and floor depression from the scan</li>
+        <li>Highlight ceiling cracks for faster inspection follow-up</li>
+        <li>Notify the user about issues before renovation or move-in</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="mm-sector">
+    <div class="mm-sector__media">
+      <img class="mm-sector__image" src="{{ '/assets/img/uniscanner/outdoor-gazebo-preview.png' | relative_url }}" alt="Outdoor realistic 3D preview of a scanned backyard with a virtual gazebo placed in the scene to show how it would look before construction" loading="lazy">
+    </div>
+    <div class="mm-sector__copy">
+      <p class="mm-eyebrow">Outdoor</p>
+      <h3 class="mm-sector__title">Realistic 3D Preview</h3>
+      <p class="mm-sector__desc">Create a realistic outdoor 3D scene from the scan, then place planned additions directly into it. A virtual gazebo can be positioned in the yard so users can see how it looks before any build decision is made.</p>
+      <div class="mm-pipeline__row mm-pipeline__row--inline">
+        <span>Garden scan</span>
+        <span class="mm-pipeline__arrow">-></span>
+        <span>3D scene</span>
+        <span class="mm-pipeline__arrow">-></span>
+        <span>Virtual placement</span>
+      </div>
+      <ul class="us-usecase-points">
+        <li>Preview gazebos, paths, fences, or furniture in context</li>
+        <li>Use realistic geometry instead of rough manual mockups</li>
+        <li>Communicate outdoor planning ideas with a browsable 3D view</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 
 <section class="mm-section">
   <div class="mm-section__head">
@@ -208,36 +279,6 @@ css:
         <li><span class="us-parts-list__num">7</span><div><strong>USB-C Base</strong><span>Data / charging interface</span></div></li>
         <li><span class="us-parts-list__num">8</span><div><strong>RTK Module</strong><span>Optional high-precision GNSS for georeferenced scans</span></div></li>
       </ul>
-    </div>
-  </div>
-</section>
-
-<section class="mm-section mm-section--muted">
-  <div class="mm-section__head">
-    <p class="mm-eyebrow">Configurations</p>
-    <h2 class="mm-section__title" id="configurations">Help Us Narrow the Price</h2>
-    <p class="mm-section__desc">We are still narrowing the final price and configuration. Early access feedback helps us understand which setup matters most and where the price should land.</p>
-  </div>
-  <div class="us-pricing-grid">
-    <div class="us-pricing-card us-pricing-card--base">
-      <p class="us-pricing-card__tier">Early Access</p>
-      <p class="us-pricing-card__price"><a href="https://deepmirror.sg.larksuite.com/share/base/form/shrlgiBYUPgo5PODDczFLXnTHPe" target="_blank" rel="noopener">Join Early Access ↗</a></p>
-      <ul class="us-pricing-card__items us-pricing-card__items--plain">
-        <li>Tell us which configuration you would actually buy</li>
-        <li>Help us prioritize the right balance of capability and cost</li>
-        <li>Get first access when UniScanner is ready</li>
-      </ul>
-      <p class="us-pricing-card__note">We want early users to help narrow the final price before launch.</p>
-    </div>
-    <div class="us-pricing-card">
-      <p class="us-pricing-card__tier">What We Are Evaluating</p>
-      <p class="us-pricing-card__price">Core vs. Pro</p>
-      <p class="us-pricing-card__note">We are comparing a simpler base scanner against more advanced options such as RTK and on-device real-time reconstruction.</p>
-    </div>
-    <div class="us-pricing-card">
-      <p class="us-pricing-card__tier">Your Input Matters</p>
-      <p class="us-pricing-card__price">2-Minute Survey</p>
-      <p class="us-pricing-card__note">If you are interested in buying or building with UniScanner, tell us your target use case and price expectations.</p>
     </div>
   </div>
 </section>
@@ -300,6 +341,37 @@ css:
     </div>
   </div>
 </section> -->
+
+<section class="mm-section mm-section--muted">
+  <div class="mm-section__head">
+    <p class="mm-eyebrow">Configurations</p>
+    <h2 class="mm-section__title" id="configurations">Help Us Narrow the Price</h2>
+    <p class="mm-section__desc">We are still narrowing the final price and configuration. Early access feedback helps us understand which setup matters most and where the price should land.</p>
+  </div>
+  <div class="us-pricing-grid">
+    <div class="us-pricing-card us-pricing-card--base">
+      <p class="us-pricing-card__tier">Early Access</p>
+      <p class="us-pricing-card__price"><a href="https://deepmirror.sg.larksuite.com/share/base/form/shrlgiBYUPgo5PODDczFLXnTHPe" target="_blank" rel="noopener">Join Early Access ↗</a></p>
+      <ul class="us-pricing-card__items us-pricing-card__items--plain">
+        <li>Tell us which configuration you would actually buy</li>
+        <li>Help us prioritize the right balance of capability and cost</li>
+        <li>Get first access when UniScanner is ready</li>
+      </ul>
+      <p class="us-pricing-card__note">We want early users to help narrow the final price before launch.</p>
+    </div>
+    <div class="us-pricing-card">
+      <p class="us-pricing-card__tier">What We Are Evaluating</p>
+      <p class="us-pricing-card__price">Core vs. Pro</p>
+      <p class="us-pricing-card__note">We are comparing a simpler base scanner against more advanced options such as RTK and on-device real-time reconstruction.</p>
+    </div>
+    <div class="us-pricing-card">
+      <p class="us-pricing-card__tier">Your Input Matters</p>
+      <p class="us-pricing-card__price">2-Minute Survey</p>
+      <p class="us-pricing-card__note">If you are interested in buying or building with UniScanner, tell us your target use case and price expectations.</p>
+    </div>
+  </div>
+</section>
+
 
 <section class="mm-section" id="survey">
   <div class="us-survey-card">

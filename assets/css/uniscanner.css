@@ -317,6 +317,34 @@ html {
   }
 }
 
+/* --- User case sectors --- */
+
+.us-usecase-points {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.7rem;
+}
+.us-usecase-points li {
+  position: relative;
+  padding-left: 1rem;
+  color: var(--mm-text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+.us-usecase-points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.52rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--mm-accent);
+  box-shadow: 0 0 12px var(--mm-accent-soft);
+}
+
 /* --- Open source + build CTA merge --- */
 
 .mm-cta__inner--wide {
