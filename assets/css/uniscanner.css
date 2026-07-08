@@ -4,6 +4,14 @@ html {
   scroll-behavior: smooth;
 }
 
+.mm-section {
+  padding: clamp(44px, 6vw, 80px) 24px;
+}
+
+.mm-section__head {
+  margin: 0 auto 2rem;
+}
+
 /* --- Hero --- */
 
 .us-hero {
@@ -96,21 +104,25 @@ html {
 }
 .us-usecase__img {
   display: block;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   height: auto;
   aspect-ratio: 1672 / 941;
   object-fit: cover;
 }
 .us-usecase__overlay {
   position: absolute;
-  inset: 0;
+  top: 0;
+  right: 5%;
+  bottom: 0;
+  left: -5%;
   background: linear-gradient(to right, transparent 0%, transparent 42%, #101317b3 68%, #101317e6 100%);
   pointer-events: none;
 }
 .us-usecase__copy {
   position: absolute;
   top: 50%;
-  right: clamp(20px, 6vw, 72px);
+  right: calc(clamp(20px, 6vw, 72px) + 5%);
   transform: translateY(-50%);
   max-width: 420px;
   text-align: right;
@@ -343,6 +355,15 @@ html {
   border-radius: 50%;
   background: var(--mm-accent);
   box-shadow: 0 0 12px var(--mm-accent-soft);
+}
+
+.us-usercases .mm-sector {
+  padding-top: 3.25rem;
+  padding-bottom: 3.25rem;
+}
+
+.us-usercases .mm-sector + .mm-sector {
+  margin-top: 1.25rem;
 }
 
 /* --- Open source + build CTA merge --- */

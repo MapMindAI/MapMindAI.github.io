@@ -125,7 +125,7 @@ css:
   })();
 </script>
 
-<section class="mm-section mm-section--dark">
+<section class="mm-section mm-section--dark mm-section--muted">
   <div class="mm-section__head">
     <p class="mm-eyebrow">Product Direction</p>
     <h2 class="mm-section__title">
@@ -187,78 +187,80 @@ css:
 </section>
 
 <section class="mm-section">
-  <div class="mm-sector">
-    <div class="mm-sector__media">
-      <img class="mm-sector__image" src="{{ '/assets/img/uniscanner/inspection-report.png' | relative_url }}" alt="Indoor inspection and planning report view showing a scanned apartment with floor plan, dimensions, ceiling height, and floor-level warning overlays" loading="lazy">
-    </div>
-    <div class="mm-sector__copy">
-      <p class="mm-eyebrow">Indoor</p>
-      <h3 class="mm-sector__title">Inspection &amp; Planning Report</h3>
-      <p class="mm-sector__desc">Turn a walkthrough scan into a report that is easier to share with owners, designers, and contractors. Room dimensions, ceiling heights, openings, and layout details can be organized into one practical planning view.</p>
-      <div class="mm-pipeline__row mm-pipeline__row--inline">
-        <span>Scan</span>
-        <span class="mm-pipeline__arrow">-></span>
-        <span>Measured model</span>
-        <span class="mm-pipeline__arrow">-></span>
-        <span>Inspection report</span>
+  <div class="us-usercases">
+    <div class="mm-sector">
+      <div class="mm-sector__media">
+        <img class="mm-sector__image" src="{{ '/assets/img/uniscanner/inspection-report.png' | relative_url }}" alt="Indoor inspection and planning report view showing a scanned apartment with floor plan, dimensions, ceiling height, and floor-level warning overlays" loading="lazy">
       </div>
-      <ul class="us-usecase-points">
-        <li>Room size, ceiling height, and floor area in one report</li>
-        <li>Doors, windows, and openings ready for renovation planning</li>
-        <li>One view that is easier to review with owners and contractors</li>
-      </ul>
+      <div class="mm-sector__copy">
+        <p class="mm-eyebrow">Indoor</p>
+        <h3 class="mm-sector__title">Inspection &amp; Planning Report</h3>
+        <p class="mm-sector__desc">Turn a walkthrough scan into a report that is easier to share with owners, designers, and contractors. Room dimensions, ceiling heights, openings, and layout details can be organized into one practical planning view.</p>
+        <div class="mm-pipeline__row mm-pipeline__row--inline">
+          <span>Scan</span>
+          <span class="mm-pipeline__arrow">-></span>
+          <span>Measured model</span>
+          <span class="mm-pipeline__arrow">-></span>
+          <span>Inspection report</span>
+        </div>
+        <ul class="us-usecase-points">
+          <li>Room size, ceiling height, and floor area in one report</li>
+          <li>Doors, windows, and openings ready for renovation planning</li>
+          <li>One view that is easier to review with owners and contractors</li>
+        </ul>
+      </div>
     </div>
-  </div>
 
-  <div class="mm-sector mm-sector--reverse">
-    <div class="mm-sector__media">
-      <img class="mm-sector__image" src="{{ '/assets/img/uniscanner/abnormal-detection.png' | relative_url }}" alt="House scan inspection view showing detected abnormalities including uneven floor and a crack on the ceiling highlighted with technical warning overlays" loading="lazy">
-    </div>
-    <div class="mm-sector__copy">
-      <p class="mm-eyebrow">Inspection</p>
-      <h3 class="mm-sector__title">Detect Abnormal Conditions</h3>
-      <p class="mm-sector__desc">When inspecting a house scan, UniScanner can highlight abnormal areas that need attention. Uneven floors, local depressions, and ceiling cracks can be surfaced visually so the user knows what should be checked or fixed first.</p>
-      <div class="mm-pipeline__row mm-pipeline__row--inline">
-        <span>House scan</span>
-        <span class="mm-pipeline__arrow">-></span>
-        <span>Surface analysis</span>
-        <span class="mm-pipeline__arrow">-></span>
-        <span>Issue alerts</span>
+    <div class="mm-sector mm-sector--reverse">
+      <div class="mm-sector__media">
+        <img class="mm-sector__image" src="{{ '/assets/img/uniscanner/abnormal-detection.png' | relative_url }}" alt="House scan inspection view showing detected abnormalities including uneven floor and a crack on the ceiling highlighted with technical warning overlays" loading="lazy">
       </div>
-      <ul class="us-usecase-points">
-        <li>Detect uneven floor and floor depression from the scan</li>
-        <li>Highlight ceiling cracks for faster inspection follow-up</li>
-        <li>Notify the user about issues before renovation or move-in</li>
-      </ul>
+      <div class="mm-sector__copy">
+        <p class="mm-eyebrow">Inspection</p>
+        <h3 class="mm-sector__title">Detect Abnormal Conditions</h3>
+        <p class="mm-sector__desc">When inspecting a house scan, UniScanner can highlight abnormal areas that need attention. Uneven floors, local depressions, and ceiling cracks can be surfaced visually so the user knows what should be checked or fixed first.</p>
+        <div class="mm-pipeline__row mm-pipeline__row--inline">
+          <span>House scan</span>
+          <span class="mm-pipeline__arrow">-></span>
+          <span>Surface analysis</span>
+          <span class="mm-pipeline__arrow">-></span>
+          <span>Issue alerts</span>
+        </div>
+        <ul class="us-usecase-points">
+          <li>Detect uneven floor and floor depression from the scan</li>
+          <li>Highlight ceiling cracks for faster inspection follow-up</li>
+          <li>Notify the user about issues before renovation or move-in</li>
+        </ul>
+      </div>
     </div>
-  </div>
 
-  <div class="mm-sector">
-    <div class="mm-sector__media">
-      <img class="mm-sector__image" src="{{ '/assets/img/uniscanner/outdoor-gazebo-preview.png' | relative_url }}" alt="Outdoor realistic 3D preview of a scanned backyard with a virtual gazebo placed in the scene to show how it would look before construction" loading="lazy">
-    </div>
-    <div class="mm-sector__copy">
-      <p class="mm-eyebrow">Outdoor</p>
-      <h3 class="mm-sector__title">Realistic 3D Preview</h3>
-      <p class="mm-sector__desc">Create a realistic outdoor 3D scene from the scan, then place planned additions directly into it. A virtual gazebo can be positioned in the yard so users can see how it looks before any build decision is made.</p>
-      <div class="mm-pipeline__row mm-pipeline__row--inline">
-        <span>Garden scan</span>
-        <span class="mm-pipeline__arrow">-></span>
-        <span>3D scene</span>
-        <span class="mm-pipeline__arrow">-></span>
-        <span>Virtual placement</span>
+    <div class="mm-sector">
+      <div class="mm-sector__media">
+        <img class="mm-sector__image" src="{{ '/assets/img/uniscanner/outdoor-gazebo-preview.png' | relative_url }}" alt="Outdoor realistic 3D preview of a scanned backyard with a virtual gazebo placed in the scene to show how it would look before construction" loading="lazy">
       </div>
-      <ul class="us-usecase-points">
-        <li>Preview gazebos, paths, fences, or furniture in context</li>
-        <li>Use realistic geometry instead of rough manual mockups</li>
-        <li>Communicate outdoor planning ideas with a browsable 3D view</li>
-      </ul>
+      <div class="mm-sector__copy">
+        <p class="mm-eyebrow">Outdoor</p>
+        <h3 class="mm-sector__title">Realistic 3D Preview</h3>
+        <p class="mm-sector__desc">Create a realistic outdoor 3D scene from the scan, then place planned additions directly into it. A virtual gazebo can be positioned in the yard so users can see how it looks before any build decision is made.</p>
+        <div class="mm-pipeline__row mm-pipeline__row--inline">
+          <span>Garden scan</span>
+          <span class="mm-pipeline__arrow">-></span>
+          <span>3D scene</span>
+          <span class="mm-pipeline__arrow">-></span>
+          <span>Virtual placement</span>
+        </div>
+        <ul class="us-usecase-points">
+          <li>Preview gazebos, paths, fences, or furniture in context</li>
+          <li>Use realistic geometry instead of rough manual mockups</li>
+          <li>Communicate outdoor planning ideas with a browsable 3D view</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
 
 
-<section class="mm-section">
+<section class="mm-section mm-section--muted">
   <div class="mm-section__head">
     <p class="mm-eyebrow">Inside the Scanner</p>
     <h2 class="mm-section__title">Built to Take Apart</h2>
