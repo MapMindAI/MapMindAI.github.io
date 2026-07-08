@@ -260,6 +260,7 @@
 .mm-sector__image {
   display: block;
   width: 100%;
+  height: auto;
   aspect-ratio: 16 / 9;
   background: #000;
   border: 1px solid var(--mm-border);
