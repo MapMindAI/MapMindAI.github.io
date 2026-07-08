@@ -42,7 +42,7 @@ css:
 
 
 <section class="us-usecase" id="use-case">
-  <img class="us-usecase__img" src="{{ '/assets/img/uniscanner/usercase_room.png' | relative_url }}" alt="UniScanner colored 3D scan of a room used for measuring and designing the space" width="1672" height="941">
+  <img class="us-usecase__img" src="{{ '/assets/img/uniscanner/usercase_room.webp' | relative_url }}" alt="UniScanner colored 3D scan of a room used for measuring and designing the space" width="1672" height="941">
   <div class="us-usecase__overlay"></div>
   <div class="us-usecase__copy">
     <p class="mm-eyebrow">User Case</p>
@@ -182,7 +182,7 @@ css:
     </div>
   </div>
   <div class="us-workflow-diagram">
-    <img src="{{ '/assets/img/uniscanner/how-it-works.png' | relative_url }}" alt="Diagram showing a dedicated LiDAR home scan converted into a measured structural model, an inspection and planning report with floor plan and dimensions, and a realistic 3D preview of the interior and outdoor Gaussian Splatting scene" loading="lazy">
+    <img src="{{ '/assets/img/uniscanner/how-it-works.webp' | relative_url }}" alt="Diagram showing a dedicated LiDAR home scan converted into a measured structural model, an inspection and planning report with floor plan and dimensions, and a realistic 3D preview of the interior and outdoor Gaussian Splatting scene" loading="lazy" width="1915" height="610">
   </div>
 </section>
 
@@ -190,7 +190,7 @@ css:
   <div class="us-usercases">
     <div class="mm-sector">
       <div class="mm-sector__media">
-        <img class="mm-sector__image" src="{{ '/assets/img/uniscanner/inspection-report.png' | relative_url }}" alt="Indoor inspection and planning report view showing a scanned apartment with floor plan, dimensions, ceiling height, and floor-level warning overlays" loading="lazy">
+        <img class="mm-sector__image" src="{{ '/assets/img/uniscanner/inspection-report.webp' | relative_url }}" alt="Indoor inspection and planning report view showing a scanned apartment with floor plan, dimensions, ceiling height, and floor-level warning overlays" loading="lazy" width="1672" height="941">
       </div>
       <div class="mm-sector__copy">
         <p class="mm-eyebrow">Indoor</p>
@@ -213,7 +213,7 @@ css:
 
     <div class="mm-sector mm-sector--reverse">
       <div class="mm-sector__media">
-        <img class="mm-sector__image" src="{{ '/assets/img/uniscanner/abnormal-detection.png' | relative_url }}" alt="House scan inspection view showing detected abnormalities including uneven floor and a crack on the ceiling highlighted with technical warning overlays" loading="lazy">
+        <img class="mm-sector__image" src="{{ '/assets/img/uniscanner/abnormal-detection.webp' | relative_url }}" alt="House scan inspection view showing detected abnormalities including uneven floor and a crack on the ceiling highlighted with technical warning overlays" loading="lazy" width="1672" height="941">
       </div>
       <div class="mm-sector__copy">
         <p class="mm-eyebrow">Inspection</p>
@@ -236,7 +236,7 @@ css:
 
     <div class="mm-sector">
       <div class="mm-sector__media">
-        <img class="mm-sector__image" src="{{ '/assets/img/uniscanner/outdoor-gazebo-preview.png' | relative_url }}" alt="Outdoor realistic 3D preview of a scanned backyard with a virtual gazebo placed in the scene to show how it would look before construction" loading="lazy">
+        <img class="mm-sector__image" src="{{ '/assets/img/uniscanner/outdoor-gazebo-preview.webp' | relative_url }}" alt="Outdoor realistic 3D preview of a scanned backyard with a virtual gazebo placed in the scene to show how it would look before construction" loading="lazy" width="1672" height="941">
       </div>
       <div class="mm-sector__copy">
         <p class="mm-eyebrow">Outdoor</p>
@@ -268,7 +268,7 @@ css:
   </div>
   <div class="mm-sector">
     <div class="mm-sector__media">
-      <img class="mm-sector__image mm-sector__image--diagram" src="{{ '/assets/img/uniscanner/exploded.jpg' | relative_url }}" alt="Exploded view of the UniScanner showing LiDAR head, RGB camera module, compute board, thermal system, battery pack, handle shell, USB-C base, and optional RTK module" loading="lazy">
+      <img class="mm-sector__image mm-sector__image--diagram" src="{{ '/assets/img/uniscanner/exploded.webp' | relative_url }}" alt="Exploded view of the UniScanner showing LiDAR head, RGB camera module, compute board, thermal system, battery pack, handle shell, USB-C base, and optional RTK module" loading="lazy" width="1448" height="1086">
     </div>
     <div class="mm-sector__copy">
       <ul class="us-parts-list">
@@ -293,7 +293,7 @@ css:
   </div>
   <div class="mm-sector">
     <div class="mm-sector__media">
-      <img class="mm-sector__image mm-sector__image--diagram" src="{{ '/assets/img/uniscanner/engineering-drawing.jpg' | relative_url }}" alt="UniScanner engineering drawing with front, side, back, and top views, dimensions, and specification table" loading="lazy">
+      <img class="mm-sector__image mm-sector__image--diagram" src="{{ '/assets/img/uniscanner/engineering-drawing.webp' | relative_url }}" alt="UniScanner engineering drawing with front, side, back, and top views, dimensions, and specification table" loading="lazy" width="1448" height="1086">
     </div>
     <div class="mm-sector__copy">
       <div class="mm-spec-panel">
