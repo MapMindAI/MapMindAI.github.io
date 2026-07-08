@@ -96,36 +96,45 @@ html {
   }
 }
 
-/* --- User Case banner --- */
+/* --- User Case banner (image in back, gradient layer, copy on top) --- */
 
 .us-usecase {
   position: relative;
   overflow: hidden;
+  width: min(90%, 1500px);
+  margin: 0 auto;
+  border-radius: var(--mm-radius);
+  background: var(--mm-surface);
+  border: 1px solid var(--mm-border);
 }
 .us-usecase__img {
   display: block;
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
   height: auto;
   aspect-ratio: 1672 / 941;
   object-fit: cover;
 }
 .us-usecase__overlay {
   position: absolute;
-  top: 0;
-  right: 5%;
-  bottom: 0;
-  left: -5%;
-  background: linear-gradient(to right, transparent 0%, transparent 42%, #101317b3 68%, #101317e6 100%);
+  inset: 0;
+  background: linear-gradient(to right, transparent 0%, transparent 40%, #101317b3 66%, #101317ee 100%);
   pointer-events: none;
+}
+.us-usecase--left .us-usecase__overlay {
+  background: linear-gradient(to left, transparent 0%, transparent 40%, #101317b3 66%, #101317ee 100%);
 }
 .us-usecase__copy {
   position: absolute;
   top: 50%;
-  right: calc(clamp(20px, 6vw, 72px) + 5%);
+  right: clamp(20px, 5vw, 72px);
   transform: translateY(-50%);
-  max-width: 420px;
+  max-width: min(440px, 46%);
   text-align: right;
+}
+.us-usecase--left .us-usecase__copy {
+  right: auto;
+  left: clamp(20px, 5vw, 72px);
+  text-align: left;
 }
 .us-usecase__title {
   margin: 0 0 0.75rem;
@@ -141,10 +150,10 @@ html {
   line-height: 1.65;
 }
 @media (max-width: 650px) {
-  .us-usecase__overlay {
+  .us-usecase:not(.us-usecase--case) .us-usecase__overlay {
     background: linear-gradient(to right, transparent 0%, #101317b3 30%, #101317e6 100%);
   }
-  .us-usecase__copy {
+  .us-usecase:not(.us-usecase--case) .us-usecase__copy {
     max-width: 72%;
   }
 }
@@ -357,13 +366,52 @@ html {
   box-shadow: 0 0 12px var(--mm-accent-soft);
 }
 
-.us-usercases .mm-sector {
-  padding-top: 3.25rem;
-  padding-bottom: 3.25rem;
+.us-usercases {
+  display: grid;
+  gap: clamp(1.5rem, 3.5vw, 2.75rem);
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.us-usercases .us-usecase {
+  width: 100%;
 }
 
-.us-usercases .mm-sector + .mm-sector {
-  margin-top: 1.25rem;
+/* User-case variant: more copy than the hero banner, so text stays
+   left-aligned and stacks below the image when the overlay runs out of room */
+.us-usecase--case .us-usecase__copy {
+  text-align: left;
+}
+.us-usecase--case .us-usecase__title {
+  font-size: clamp(1.25rem, 2.4vw, 1.8rem);
+}
+.us-usecase--case .us-usecase__desc {
+  margin: 0 0 1.1rem;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+.us-usecase--case .mm-pipeline__row--inline {
+  margin-bottom: 1.1rem;
+}
+.us-usecase--case .mm-pipeline__row span:not(.mm-pipeline__arrow) {
+  background: #15181dd9;
+}
+.us-usecase--case .us-usecase-points li {
+  color: #d3d7dc;
+}
+@media (max-width: 900px) {
+  .us-usecase--case .us-usecase__overlay {
+    background: linear-gradient(to bottom, transparent 45%, #101317cc 82%, var(--mm-surface) 100%);
+  }
+  .us-usecase--case .us-usecase__copy {
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    transform: none;
+    max-width: none;
+    padding: 0 1.25rem 1.5rem;
+    margin-top: -1.75rem;
+  }
 }
 
 /* --- Open source + build CTA merge --- */
