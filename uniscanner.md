@@ -79,7 +79,7 @@ css:
       <p>The colored point cloud and camera trajectory can further train a Gaussian Splatting scene for immersive, browsable 3D.</p>
     </div>
   </div>
-  <p></p>
+  <!-- <p></p>
   <div class="mm-sector__media mm-sector__media--gallery us-results-grid">
     <figure class="mm-sector__figure">
       <video class="mm-sector__video us-autoplay-video" controls muted loop playsinline preload="none" poster="{{ '/assets/videos/posters/color_mapping_1.jpg' | relative_url }}">
@@ -105,7 +105,7 @@ css:
       </video>
       <figcaption class="mm-sector__caption">RTK-Verified Mapping — Demo 2</figcaption>
     </figure>
-  </div>
+  </div> -->
 </section>
 
 <script>
