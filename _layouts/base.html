@@ -50,7 +50,9 @@ common-js:
 
     {% include gtm_body.html %}
 
-    {% include nav.html %}
+    {% unless page.hide_nav %}
+      {% include nav.html %}
+    {% endunless %}
 
     {{ content }}
 

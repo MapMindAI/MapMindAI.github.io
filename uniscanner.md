@@ -2,10 +2,18 @@
 layout: base
 title: UniScanner — UniLidar L2 Handheld 3D Scanner
 meta-description: UniScanner is an open-source handheld 3D scanning rig built on the UniLidar L2, producing colored point clouds and Gaussian Splatting scenes.
+hide_nav: true
 css:
   - /assets/css/index.css
   - /assets/css/uniscanner.css
 ---
+
+<nav class="us-nav" aria-label="UniScanner page">
+  <a class="us-nav__brand" href="{{ '/' | relative_url }}" aria-label="MapMindAI home">
+    <img src="{{ site.title-img | relative_url }}" alt="MapMindAI logo" width="36" height="36">
+    <span>MapMindAI</span>
+  </a>
+</nav>
 
 <section class="us-hero">
   <div class="us-hero__glow"></div>
